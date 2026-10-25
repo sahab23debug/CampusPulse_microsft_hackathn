@@ -1,0 +1,6 @@
+{
+  "name": "CampusPulse - Study-Buddy & Event Hub",
+  "description": "Hybrid study-buddy matching and campus event bulletin platform with Flutter and Serverpod architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
