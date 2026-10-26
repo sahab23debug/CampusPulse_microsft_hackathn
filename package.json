@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "dart compile js web/main.dart -o web/main.dart.js && vite build",
+    "build": "node scripts/build.js",
     "preview": "vite preview",
-    "clean": "rm -rf dist web/main.dart.js",
-    "lint": "dart analyze web/main.dart"
+    "clean": "rm -rf dist docs public/web",
+    "lint": "node scripts/lint.js"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

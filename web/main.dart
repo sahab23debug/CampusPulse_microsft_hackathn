@@ -360,7 +360,7 @@ class AppState {
         location: 'Soda Hall - Wozniak Lounge',
         room: 'Room 430',
         description: 'Collaborative walk-through of previous exam questions on SVMs, kernel ridge regression, and loss gradient derivations. Whiteboard space and snacks provided!',
-        imageUrl: '/src/assets/images/library_study_hub_1792864911583.jpg',
+        imageUrl: './assets/images/library_study_hub_1792864911583.jpg',
         attendeesCount: 38,
         maxCapacity: 50,
         isRsvpd: true,
@@ -378,7 +378,7 @@ class AppState {
         location: 'Jacobs Hall Makerspace & Design Hall',
         room: 'Studio One',
         description: 'Build production-grade mobile web applications with Dart, Flutter, and Serverpod. Mentors will be on-site to assist teams throughout the weekend.',
-        imageUrl: '/src/assets/images/hackathon_team_jam_1792864909538.jpg',
+        imageUrl: './assets/images/hackathon_team_jam_1792864909538.jpg',
         attendeesCount: 142,
         maxCapacity: 200,
         isRsvpd: false,
@@ -395,7 +395,7 @@ class AppState {
         location: 'Memorial Glade North Lawn',
         room: 'Outdoor Amphitheater',
         description: 'Take a break from midterm grinding. Unwind with acoustic sets, artisan hot apple cider, lawn games, and meet fellow students across disciplines.',
-        imageUrl: '/src/assets/images/campus_event_concert_1792864910760.jpg',
+        imageUrl: './assets/images/campus_event_concert_1792864910760.jpg',
         attendeesCount: 89,
         maxCapacity: 250,
         isRsvpd: false,
@@ -411,7 +411,7 @@ class AppState {
         location: 'Cory Hall Systems Computing Lab',
         room: 'Lab 214',
         description: 'Hands-on debugging session for Pintos Project 1: Timer interrupts, priority scheduling, and synchronization primitives. Bring your laptops.',
-        imageUrl: '/src/assets/images/campus_quad_banner_1792864909368.jpg',
+        imageUrl: './assets/images/campus_quad_banner_1792864909368.jpg',
         attendeesCount: 24,
         maxCapacity: 35,
         isRsvpd: true,
@@ -729,7 +729,7 @@ Element renderLoginScreen() {
 
   // Ambient campus quad background image with dual-tone gradient overlay
   final bg = ImageElement()
-    ..src = '/src/assets/images/campus_quad_banner_1792864909368.jpg'
+    ..src = './assets/images/campus_quad_banner_1792864909368.jpg'
     ..alt = 'Campus Quad'
     ..className = 'absolute inset-0 w-full h-full object-cover opacity-20 filter blur-xs';
   final scrim = DivElement()..className = 'absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900/90 to-indigo-950/70';
@@ -1978,7 +1978,7 @@ Element renderDiscoverSection() {
   final hero = DivElement()..className = 'relative rounded-3xl overflow-hidden border border-slate-200 shadow-xs bg-slate-900 min-h-[280px] sm:min-h-[320px] flex items-center';
   
   final heroImg = ImageElement()
-    ..src = '/src/assets/images/campus_quad_banner_1792864909368.jpg'
+    ..src = './assets/images/campus_quad_banner_1792864909368.jpg'
     ..className = 'absolute inset-0 w-full h-full object-cover opacity-50';
 
   final scrim = DivElement()..className = 'absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent';
@@ -3384,10 +3384,10 @@ Element renderCreateEventModal() {
                       room: state.userRole == 'teacher' ? 'Suite 524' : 'Studio 1',
                       description: descInput.value?.trim() ?? 'Campus event posted by authorized university affiliate.',
                       imageUrl: state.userRole == 'teacher'
-                          ? '/src/assets/images/library_study_hub_1792864911583.jpg'
+                          ? './assets/images/library_study_hub_1792864911583.jpg'
                           : state.userRole == 'club_head'
-                              ? '/src/assets/images/hackathon_team_jam_1792864909538.jpg'
-                              : '/src/assets/images/campus_quad_banner_1792864909368.jpg',
+                              ? './assets/images/hackathon_team_jam_1792864909538.jpg'
+                              : './assets/images/campus_quad_banner_1792864909368.jpg',
                       attendeesCount: 1,
                       maxCapacity: parsedCap,
                       isRsvpd: true,
