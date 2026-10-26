@@ -126,6 +126,46 @@ class ChatMessage {
   });
 }
 
+class QuizQuestion {
+  String id;
+  String course;
+  String topic;
+  String prompt;
+  List<String> options;
+  int correctIndex;
+  String explanation;
+
+  QuizQuestion({
+    required this.id,
+    required this.course,
+    required this.topic,
+    required this.prompt,
+    required this.options,
+    required this.correctIndex,
+    required this.explanation,
+  });
+}
+
+class QuizSession {
+  String sessionId;
+  String roomId;
+  String course;
+  List<String> players;
+  int currentQuestionIndex;
+  Map<String, int> scores;
+  bool isCompleted;
+
+  QuizSession({
+    required this.sessionId,
+    required this.roomId,
+    required this.course,
+    required this.players,
+    required this.currentQuestionIndex,
+    required this.scores,
+    this.isCompleted = false,
+  });
+}
+
 // ==========================================
 // APPLICATION STATE (DART)
 // ==========================================

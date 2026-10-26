@@ -1,0 +1,22 @@
+class: StudentProfile
+table: student_profiles
+fields:
+  userId: String
+  name: String
+  avatar: String
+  major: String
+  department: String
+  year: String
+  semester: String
+  bio: String
+  courses: List<String>
+  interests: List<String>
+  lookingFor: String
+  studyStyle: String
+  preferredLocation: String
+  availability: String
+  compatScore: int
+  matchReasons: List<String>
+  isOnline: bool
+  isVerified: bool
+  role: String

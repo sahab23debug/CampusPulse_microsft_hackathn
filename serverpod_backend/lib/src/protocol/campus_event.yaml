@@ -1,0 +1,20 @@
+class: CampusEvent
+table: campus_events
+fields:
+  eventId: String
+  title: String
+  organizer: String
+  organizerRole: String
+  category: String
+  dateStr: String
+  location: String
+  room: String?
+  description: String
+  imageUrl: String
+  attendeesCount: int
+  maxCapacity: int?
+  isRsvpd: bool
+  isFeatured: bool
+  isOfficial: bool
+  tags: List<String>
+  createdByUserId: String

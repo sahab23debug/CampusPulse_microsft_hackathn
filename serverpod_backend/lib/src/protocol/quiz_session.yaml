@@ -1,0 +1,12 @@
+class: QuizSession
+table: quiz_sessions
+fields:
+  sessionId: String
+  roomId: String
+  course: String
+  players: List<String>
+  currentQuestionIndex: int
+  scores: Map<String, int>
+  isCompleted: bool
+  winnerUserId: String?
+  createdAt: DateTime
