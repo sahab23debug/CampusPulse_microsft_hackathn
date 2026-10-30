@@ -1,0 +1,22 @@
+class: QuizQuestion
+table: quiz_question
+fields:
+  subject: String
+  topic: String
+  difficulty: String
+  questionText: String
+  optionA: String
+  optionB: String
+  optionC: String
+  optionD: String
+  correctOptionIndex: int
+  explanation: String
+  textHash: String
+  usageCount: int
+  createdAt: DateTime
+indexes:
+  quiz_question_subj_diff_idx:
+    fields: subject, difficulty
+  quiz_question_hash_idx:
+    fields: textHash
+    unique: true

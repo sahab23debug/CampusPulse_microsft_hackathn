@@ -1,0 +1,16 @@
+class: TimetableEntry
+table: timetable_entry
+fields:
+  sectionId: int
+  subjectId: int
+  subjectName: String
+  subjectCode: String
+  facultyName: String
+  roomNumber: String
+  dayOfWeek: int
+  startTime: String
+  endTime: String
+  type: String
+indexes:
+  timetable_section_day_idx:
+    fields: sectionId, dayOfWeek

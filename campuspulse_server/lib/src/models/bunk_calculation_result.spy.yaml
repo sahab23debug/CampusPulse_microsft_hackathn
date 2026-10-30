@@ -1,0 +1,12 @@
+class: BunkCalculationResult
+fields:
+  subjectId: int?
+  subjectName: String?
+  classesAttended: int
+  totalClassesHeld: int
+  currentPercentage: double
+  requiredPercentage: double
+  safeBunks: int
+  recoveryClassesNeeded: int
+  statusColor: String
+  whatIfBunkScenarios: List<String>?

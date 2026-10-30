@@ -1,0 +1,13 @@
+class: AbuseReport
+table: abuse_report
+fields:
+  reporterUserId: int
+  reporterUserName: String
+  targetType: String
+  targetId: int
+  reason: String
+  status: String
+  createdAt: DateTime
+indexes:
+  report_status_idx:
+    fields: status

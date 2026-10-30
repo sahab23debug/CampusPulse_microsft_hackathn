@@ -1,0 +1,14 @@
+class: Conversation
+table: conversation
+fields:
+  user1Id: int
+  user2Id: int
+  lastMessageSnippet: String?
+  lastMessageAt: DateTime?
+  user1UnreadCount: int
+  user2UnreadCount: int
+  isAccepted: bool
+indexes:
+  conversation_users_idx:
+    fields: user1Id, user2Id
+    unique: true

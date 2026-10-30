@@ -1,0 +1,15 @@
+class: CalendarEvent
+table: calendar_event
+fields:
+  collegeId: int?
+  sectionId: int?
+  title: String
+  description: String
+  eventType: String
+  startDate: DateTime
+  endDate: DateTime
+  isAllDay: bool
+  venue: String?
+indexes:
+  cal_event_college_date_idx:
+    fields: collegeId, startDate

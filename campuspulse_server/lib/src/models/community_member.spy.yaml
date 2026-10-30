@@ -1,0 +1,13 @@
+class: CommunityMember
+table: community_member
+fields:
+  communityId: int
+  userId: int
+  userName: String
+  role: String
+  joinedAt: DateTime
+  isApproved: bool
+indexes:
+  comm_member_unique_idx:
+    fields: communityId, userId
+    unique: true

@@ -1,0 +1,66 @@
+academic:
+  - getColleges:
+  - addCollege:
+  - getBranches:
+  - getSections:
+  - getSubjects:
+attendance:
+  - getUserAttendance:
+  - getBunkStats:
+  - upsertRecord:
+  - markTodayAttendance:
+community:
+  - getCommunities:
+  - createCommunity:
+  - toggleJoinCommunity:
+  - getCommunityPosts:
+  - createPost:
+connect:
+  - createRequirement:
+  - getRankedCandidates:
+  - sendRequest:
+  - respondToRequest:
+  - sendMessage:
+  - getMessages:
+event:
+  - getEventFeed:
+  - registerForEvent:
+  - getMyRegisteredEvents:
+  - createEvent:
+hello:
+  - hello:
+  - healthCheck:
+quiz:
+  - startMatch:
+  - submitAnswer:
+  - finishMatch:
+  - getLeaderboard:
+rental:
+  - getRentalItems:
+  - createListing:
+  - requestRental:
+  - respondRentalRequest:
+  - completeReturn:
+resource:
+  - getResources:
+  - getResourceById:
+  - uploadResource:
+  - rateResource:
+  - addComment:
+  - deleteComment:
+  - toggleFollow:
+  - toggleBookmark:
+  - reportAbuse:
+seed:
+  - seedDemoData:
+timetable:
+  - getTodaySchedule:
+  - getWeeklySchedule:
+  - getAcademicCalendar:
+  - createTimetableEntry:
+  - createCalendarEvent:
+userProfile:
+  - getProfile:
+  - getPublicProfile:
+  - updateProfile:
+  - completeOnboarding:

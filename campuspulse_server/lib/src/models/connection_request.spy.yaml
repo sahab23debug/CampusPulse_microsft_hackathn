@@ -1,0 +1,15 @@
+class: ConnectionRequest
+table: connection_request
+fields:
+  senderId: int
+  senderName: String
+  receiverId: int
+  receiverName: String
+  note: String
+  status: String
+  messageCountBeforeAccept: int
+  createdAt: DateTime
+  updatedAt: DateTime?
+indexes:
+  conn_req_sender_recv_idx:
+    fields: senderId, receiverId

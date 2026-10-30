@@ -1,0 +1,23 @@
+name: campuspulse_server
+description: CampusPulse Serverpod Backend
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  serverpod: 4.0.4
+  serverpod_auth_server: 4.0.4
+  crypto: ^3.0.6
+
+dev_dependencies:
+  test: ^1.25.2
+  serverpod_test: 4.0.4
+
+serverpod:
+  scripts:
+    start: dart lib/server.dart
+    migrate: dart lib/server.dart --apply-migrations
+    test: dart test
+    build: dart compile exe lib/server.dart

@@ -1,0 +1,16 @@
+class: AttendanceRecord
+table: attendance_record
+fields:
+  userId: int
+  subjectId: int
+  subjectName: String
+  subjectCode: String
+  classesAttended: int
+  totalClassesHeld: int
+  requiredPercentage: double
+  plannedTotalClasses: int?
+  lastUpdated: DateTime
+indexes:
+  attendance_user_subject_idx:
+    fields: userId, subjectId
+    unique: true

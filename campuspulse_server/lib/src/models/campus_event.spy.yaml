@@ -1,0 +1,22 @@
+class: CampusEvent
+table: campus_event
+fields:
+  collegeId: int
+  organizerClub: String
+  creatorUserId: int
+  title: String
+  description: String
+  posterUrl: String
+  venue: String
+  eventDate: DateTime
+  registrationDeadline: DateTime
+  capacity: int?
+  registrationCount: int
+  registrationUrl: String?
+  isInternalRegistration: bool
+  tags: List<String>
+  isApproved: bool
+  createdAt: DateTime
+indexes:
+  campus_event_deadline_idx:
+    fields: collegeId, registrationDeadline

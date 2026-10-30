@@ -1,0 +1,19 @@
+class: PlayerRating
+table: player_rating
+fields:
+  userId: int
+  userName: String
+  collegeId: int
+  branchId: int
+  year: int
+  rating: int
+  matchesPlayed: int
+  matchesWon: int
+  weeklyScore: int
+  lastUpdated: DateTime
+indexes:
+  player_rating_user_idx:
+    fields: userId
+    unique: true
+  player_rating_college_idx:
+    fields: collegeId, rating

@@ -1,0 +1,13 @@
+class: Bookmark
+table: bookmark
+fields:
+  userId: int
+  resourceType: String
+  targetId: int
+  title: String
+  subtitle: String?
+  createdAt: DateTime
+indexes:
+  bookmark_user_target_idx:
+    fields: userId, resourceType, targetId
+    unique: true

@@ -1,0 +1,16 @@
+class: QuizMatch
+table: quiz_match
+fields:
+  mode: String
+  roomCode: String?
+  subject: String
+  difficulty: String
+  status: String
+  questionIdsJson: String
+  currentQuestionIndex: int
+  startedAt: DateTime?
+  endedAt: DateTime?
+  createdAt: DateTime
+indexes:
+  quiz_match_room_idx:
+    fields: roomCode

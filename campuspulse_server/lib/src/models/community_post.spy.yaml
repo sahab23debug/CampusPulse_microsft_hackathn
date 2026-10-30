@@ -1,0 +1,17 @@
+class: CommunityPost
+table: community_post
+fields:
+  communityId: int
+  authorId: int
+  authorName: String
+  authorAvatarUrl: String?
+  content: String
+  imageUrl: String?
+  isAnnouncement: bool
+  isPinned: bool
+  likeCount: int
+  commentCount: int
+  createdAt: DateTime
+indexes:
+  comm_post_comm_idx:
+    fields: communityId, createdAt

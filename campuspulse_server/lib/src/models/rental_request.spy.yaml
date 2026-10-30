@@ -1,0 +1,19 @@
+class: RentalRequest
+table: rental_request
+fields:
+  itemId: int
+  renterId: int
+  renterName: String
+  ownerId: int
+  status: String
+  consentAgreed: bool
+  startDate: DateTime
+  returnDueDate: DateTime
+  handoverPhotosJson: String?
+  returnPhotosJson: String?
+  totalRentAmount: double
+  depositHeld: double
+  createdAt: DateTime
+indexes:
+  rental_req_item_renter_idx:
+    fields: itemId, renterId

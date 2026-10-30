@@ -1,0 +1,14 @@
+class: QuizAnswer
+table: quiz_answer
+fields:
+  matchId: int
+  userId: int
+  questionId: int
+  selectedOptionIndex: int
+  timeTakenMs: int
+  isCorrect: bool
+  pointsEarned: int
+indexes:
+  quiz_ans_match_q_u_idx:
+    fields: matchId, questionId, userId
+    unique: true

@@ -1,0 +1,19 @@
+class: RentalItem
+table: rental_item
+fields:
+  ownerId: int
+  ownerName: String
+  title: String
+  category: String
+  description: String
+  photosJson: String
+  rentPricePerDay: double
+  depositAmount: double
+  condition: String
+  isAvailable: bool
+  pickupPlace: String
+  collegeId: int
+  createdAt: DateTime
+indexes:
+  rental_item_college_avail_idx:
+    fields: collegeId, isAvailable

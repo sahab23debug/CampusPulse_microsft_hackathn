@@ -1,0 +1,10 @@
+class: ResourceFollow
+table: resource_follow
+fields:
+  resourceId: int
+  userId: int
+  createdAt: DateTime
+indexes:
+  res_follow_uniq_idx:
+    fields: resourceId, userId
+    unique: true

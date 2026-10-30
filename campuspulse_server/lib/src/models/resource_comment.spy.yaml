@@ -1,0 +1,13 @@
+class: ResourceComment
+table: resource_comment
+fields:
+  resourceId: int
+  userId: int
+  userName: String
+  userAvatarUrl: String?
+  content: String
+  createdAt: DateTime
+  isReported: bool
+indexes:
+  res_comment_res_idx:
+    fields: resourceId

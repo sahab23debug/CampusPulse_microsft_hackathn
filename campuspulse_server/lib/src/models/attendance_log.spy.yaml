@@ -1,0 +1,11 @@
+class: AttendanceLog
+table: attendance_log
+fields:
+  userId: int
+  subjectId: int
+  date: DateTime
+  status: String
+  source: String
+indexes:
+  attendance_log_user_date_idx:
+    fields: userId, date

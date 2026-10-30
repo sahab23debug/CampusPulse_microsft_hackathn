@@ -1,0 +1,11 @@
+class: Subject
+table: subject
+fields:
+  branchId: int
+  semester: int
+  name: String
+  code: String
+  credits: int
+indexes:
+  subject_branch_sem_idx:
+    fields: branchId, semester

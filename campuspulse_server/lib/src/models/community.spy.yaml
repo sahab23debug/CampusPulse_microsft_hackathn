@@ -1,0 +1,15 @@
+class: Community
+table: community
+fields:
+  name: String
+  description: String
+  category: String
+  iconUrl: String?
+  creatorUserId: int
+  collegeId: int?
+  isPrivate: bool
+  memberCount: int
+  createdAt: DateTime
+indexes:
+  community_category_idx:
+    fields: category

@@ -1,0 +1,28 @@
+class: Resource
+table: resource
+fields:
+  uploaderId: int
+  uploaderName: String
+  uploaderSgpa: double?
+  uploaderSemester: int?
+  title: String
+  description: String
+  subjectId: int
+  subjectName: String
+  semester: int
+  branchId: int
+  year: int
+  resourceType: String
+  fileUrl: String?
+  externalUrl: String?
+  tags: List<String>
+  viewsCount: int
+  followCount: int
+  averageRating: double
+  ratingCount: int
+  createdAt: DateTime
+indexes:
+  resource_branch_year_idx:
+    fields: branchId, year
+  resource_subject_idx:
+    fields: subjectId

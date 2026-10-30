@@ -1,0 +1,12 @@
+class: EventRegistration
+table: event_registration
+fields:
+  eventId: int
+  userId: int
+  userName: String
+  userEmail: String
+  registeredAt: DateTime
+indexes:
+  event_reg_unique_idx:
+    fields: eventId, userId
+    unique: true

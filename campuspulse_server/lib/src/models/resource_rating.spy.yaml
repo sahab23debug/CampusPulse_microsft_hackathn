@@ -1,0 +1,13 @@
+class: ResourceRating
+table: resource_rating
+fields:
+  resourceId: int
+  userId: int
+  userName: String
+  rating: int
+  review: String?
+  createdAt: DateTime
+indexes:
+  res_rating_user_idx:
+    fields: resourceId, userId
+    unique: true

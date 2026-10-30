@@ -1,0 +1,16 @@
+class: QuizMatchPlayer
+table: quiz_match_player
+fields:
+  matchId: int
+  userId: int
+  userName: String
+  userAvatarUrl: String?
+  score: int
+  correctAnswersCount: int
+  ratingBefore: int
+  ratingAfter: int?
+  isFinished: bool
+indexes:
+  quiz_player_match_idx:
+    fields: matchId, userId
+    unique: true

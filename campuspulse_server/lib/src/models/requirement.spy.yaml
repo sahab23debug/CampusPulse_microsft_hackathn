@@ -1,0 +1,25 @@
+class: Requirement
+table: requirement
+fields:
+  creatorId: int
+  creatorName: String
+  creatorCollege: String
+  creatorBranch: String
+  creatorYear: int
+  purpose: String
+  title: String
+  description: String
+  requiredSkills: List<String>
+  preferredSkills: List<String>
+  teamSizeNeeded: int
+  deadline: DateTime?
+  preferredBranch: String?
+  preferredYear: int?
+  proximity: String?
+  isActive: bool
+  createdAt: DateTime
+indexes:
+  requirement_purpose_idx:
+    fields: purpose
+  requirement_creator_idx:
+    fields: creatorId

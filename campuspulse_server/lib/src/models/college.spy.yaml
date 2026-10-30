@@ -1,0 +1,11 @@
+class: College
+table: college
+fields:
+  name: String
+  code: String
+  city: String
+  state: String
+indexes:
+  college_code_idx:
+    fields: code
+    unique: true

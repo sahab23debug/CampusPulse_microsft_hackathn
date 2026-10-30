@@ -1,0 +1,10 @@
+class: Branch
+table: branch
+fields:
+  collegeId: int
+  name: String
+  code: String
+  degree: String
+indexes:
+  branch_college_idx:
+    fields: collegeId
